@@ -9,7 +9,7 @@ if [ ! -f "/etc/yum.repos.d/vim-latest.repo" ];then
 fi
 
 if [ ! -f "${basepath}/autoload/plug.vim" ];then
-    curl -fLo ${basepath}/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    curl -fLo ${basepath}/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
 rm -fr ~/.vim
@@ -17,8 +17,4 @@ ln -sf ${basepath} ~/.vim
 ln -sf ~/.vim/vimrc ~/.vimrc
 ln -sf ~/.vim/config/_wildignore.options ~/.cache/tags/_wildignore.options
 
-vim << EOF
-:PlugUpdate
-:q
-:q
-EOF
+vim +PluginInstall +qall
