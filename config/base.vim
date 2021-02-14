@@ -75,7 +75,7 @@ set hlsearch
 " 不自动换行
 set nowrap
 " 终端滚动时时刻保留n行在界面中
-set scrolloff=25
+" set scrolloff=25
 
 " 高亮特殊符
 "set backspace=indent,eol,start
