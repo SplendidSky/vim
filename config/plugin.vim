@@ -72,15 +72,15 @@ let g:gutentags_auto_add_gtags_cscope = 0
 let g:gutentags_plus_switch = 1
 
 " default keymap
-"<leader>cs	Find symbol (reference) under cursor
-"<leader>cg	Find symbol definition under cursor
-"<leader>cd	Functions called by this function
-"<leader>cc	Functions calling this function
-"<leader>ct	Find text string under cursor
-"<leader>ce	Find egrep pattern under cursor
-"<leader>cf	Find file name under cursor
-"<leader>ci	Find files #including the file name under cursor
-"<leader>ca	Find places where current symbol is assigned
+<leader>cs	Find symbol (reference) under cursor
+<leader>cg	Find symbol definition under cursor
+<leader>cd	Functions called by this function
+<leader>cc	Functions calling this function
+<leader>ct	Find text string under cursor
+<leader>ce	Find egrep pattern under cursor
+<leader>cf	Find file name under cursor
+<leader>ci	Find files #including the file name under cursor
+<leader>ca	Find places where current symbol is assigned
 
 "----------vim-preview配置-------------------------------------------------
 "P 预览 大p关闭
@@ -149,6 +149,7 @@ noremap <Leader>fb :LeaderfBuffer<cr>
 noremap <Leader>ft :LeaderfTag<cr>
 noremap <Leader>fm :LeaderfMru<cr>
 noremap <Leader>fl :LeaderfLine<cr>
+noremap <Leader>fr :Leaderf rg<cr>
 
 let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
