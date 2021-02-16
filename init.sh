@@ -1,6 +1,8 @@
 #!/bin/bash
 
 basepath=$(pushd `dirname $0` > /dev/null; pwd; popd > /dev/null)
+yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
+yum install ripgrep -y
 
 if [ ! -f "/etc/yum.repos.d/vim-latest.repo" ];then
     sudo curl -L https://copr.fedorainfracloud.org/coprs/lantw44/vim-latest/repo/epel-7/lantw44-vim-latest-epel-7.repo -o /etc/yum.repos.d/vim-latest.repo
